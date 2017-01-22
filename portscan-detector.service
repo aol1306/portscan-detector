@@ -1,0 +1,9 @@
+[Unit]
+Description=Simple portscan detector.
+
+[Service]
+ExecStart=/etc/portscan-detector/portscan-detector.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
